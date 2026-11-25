@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Maven+Pro:wght@400..900&display=swap");
+
+.section {
+  margin-top: 10px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.title-badge {
+  color: #000000;
+  padding: 1px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  letter-spacing: 3px;
+}
+.technology-title {
+  color: #000000;
+  padding: 1px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  letter-spacing: 3px;
+}
+
+.span-tecno {
+  color: #0a0a0a;
+}
+.span-logia {
+  color: #378ff3;
+}
+
+.container-listT {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #000;
+}
+
+.list-technology {
+  list-style: none;
+  padding: 3px;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  background-color: #e2e2e279;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.45s ease;
+}
+.icon-technology {
+  height: 35px;
+  width: 35px;
+  box-sizing: border-box;
+  background-color: #fffffffa;
+  border-radius: 10px;
+  padding: 3px;
+  transition: transform 0.45s ease;
+}
+.list-technology:hover {
+  opacity: 1;
+  transform: translateX(0) translateY(-10%);
+}
+
+@media (min-width: 800px) {
+  .title-badge {
+    font-size: 6rem;
+  }
+  .technology-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .container-listT {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  .technology-title {
+    font-size: 2.5rem;
+  }
+  .icon-technology {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,68 @@
+.container-list-nav {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  gap: 22px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.list-nav {
+  list-style: none;
+}
+
+.btn-nav {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  color: #000;
+  border-bottom: 4px solid transparent;
+  background-color: transparent;
+  font-size: 1.6rem;
+  padding: 10px 5px;
+  font-family: "Bebas Neue", sans-serif;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.btn-nav:hover {
+  border-bottom: 4px solid #378ff3;
+}
+
+.menu {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .menu {
+    display: block;
+  }
+
+  .container-list-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #378ff3;
+  }
+
+  .container-list-nav.open {
+    display: flex;
+  }
+  .btn-nav {
+    color: #f4f4f4;
+  }
+}

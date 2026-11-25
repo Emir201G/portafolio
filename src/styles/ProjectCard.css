@@ -1,0 +1,179 @@
+.title-card-project {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.4rem;
+}
+
+.span-ctos {
+  color: #378ff3;
+}
+.box-project {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+  border: 1px solid #000;
+  background-color: #dedede89;
+}
+
+.box-project:hover {
+  transform: translate(-5px, -5px);
+}
+
+.container-title-project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  color: #fff;
+  border-radius: 10px;
+}
+.container-card-project {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-data {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.container-list-icon-project {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+}
+.list-icon-technology {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #74747438;
+}
+.span-number-project {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.8rem;
+  background-color: #378ff3;
+  padding: 5px 15px;
+}
+.title-project {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.9rem;
+}
+.span-status {
+  font-family: "Maven Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 0.8rem;
+  background-color: #1bdc35;
+  padding: 5px 15px;
+}
+
+.span-status-desarrollo {
+  font-family: "Maven Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 0.8rem;
+  padding: 5px 15px;
+  background-color: #d76b0c;
+}
+.description-project {
+  font-family: "Maven Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1rem;
+}
+.icon-technology-project {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.img-project {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+.repository {
+  margin-top: 50px;
+  align-self: center;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 10px;
+  width: 250px;
+  background-color: #000;
+  padding: 10px 40px;
+  cursor: pointer;
+  color: #fff;
+}
+.icon-github-project {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+}
+
+.container-img-card {
+  width: 100%;
+}
+
+.img-project {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (min-width: 800px) {
+  .title-card-project {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 1000px) {
+  .title-card-project {
+    font-size: 6rem;
+  }
+  .box-project {
+    width: 80%;
+    padding: 70px;
+  }
+  .container-card-project {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .container-data {
+    width: 55%;
+  }
+
+  .container-img-card {
+    width: 45%;
+    padding: 0;
+  }
+  .description-project {
+    font-size: 1.2rem;
+  }
+}

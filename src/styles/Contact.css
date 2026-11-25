@@ -1,0 +1,95 @@
+.form-contact {
+  width: 100%;
+  padding: 20px 16px;
+  background-color: black;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label-contact {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.input-contact,
+.text-contact {
+  width: 100%;
+  padding: 12px;
+  /* 16px (1rem) evita que iOS haga zoom automático al enfocar el input */
+  font-size: 1rem;
+  font-family: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  border-radius: 8px;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.input-contact {
+  min-height: 44px; /* área táctil cómoda */
+}
+
+.text-contact {
+  min-height: 115px;
+  resize: vertical;
+}
+
+.input-contact:focus,
+.text-contact:focus {
+  border-color: currentColor;
+  box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.15);
+}
+
+.btn-contact {
+  width: 100%;
+  min-height: 48px; /* fácil de pulsar con el pulgar */
+  margin-top: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition:
+    opacity 0.2s ease,
+    transform 0.1s ease;
+}
+
+.btn-contact:hover:not(:disabled) {
+  opacity: 0.75;
+}
+
+.btn-contact:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.btn-contact:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.form-result {
+  margin: 0;
+  font-size: 0.875rem;
+  text-align: center;
+  opacity: 0.85;
+}

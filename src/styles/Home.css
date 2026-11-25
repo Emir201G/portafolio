@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Maven+Pro:wght@400..900&display=swap");
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+}
+.hi {
+  font-family: "Maven Pro", sans-serif;
+  font-optical-sizing: auto;
+}
+.name {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  padding: 1px 0px;
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-size: 2rem;
+
+  color: #378ff3;
+  box-sizing: border-box;
+  width: 110px;
+}
+.span-name {
+  background-color: #378ff3;
+  padding: 0px 3px 0;
+  color: #f3f3f4;
+}
+.span-name-last {
+  box-sizing: border-box;
+}
+.last-name {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border: 2px solid rgb(0, 0, 17);
+  font-size: 2rem;
+  padding: 1px 0;
+  letter-spacing: 2px;
+}
+.span-last-name {
+  background-color: #378ff3;
+  color: #f3f3f4;
+}
+
+.span-backend {
+  color: #378ff3;
+
+  box-sizing: border-box;
+  padding: 2px 4px;
+}
+.developer {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+  padding: 5px 2px;
+}
+
+.description {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.container-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.btn-projects {
+  position: relative;
+  box-sizing: border-box;
+  width: 150px;
+  height: 37px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #000;
+  color: #f3f3f4;
+  border-radius: 5px;
+  border: none;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.btns-cv {
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #000;
+}
+.btn-projects::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+}
+
+.btn-cv {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  .hi {
+    font-size: 1.5rem;
+  }
+  .name {
+    font-size: 3rem;
+  }
+  .last-name {
+    font-size: 4.5rem;
+  }
+  .developer {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.9rem;
+  }
+  .btn-projects {
+    font-size: 1.1rem;
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hi {
+    font-size: 2.5rem;
+  }
+  .name {
+    font-size: 5rem;
+  }
+  .last-name {
+    font-size: 7rem;
+  }
+  .developer {
+    font-size: 5rem;
+  }
+  .description {
+    font-size: 1.9rem;
+  }
+  .btn-projects {
+    font-size: 1.1rem;
+    width: 200px;
+    height: 50px;
+  }
+}
